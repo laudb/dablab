@@ -113,14 +113,24 @@
     <div class="content-section-a">
 
         <div class="container">
+                <input type="radio" name="waste" value="kvip">KVIP (572,824)
+                <input type="radio" name="waste" value="public">Public Toilet (1,893,291)
+                <!-- <input type="radio" name="waste" value="other">Other -->
             <div class="row">
-            <form action="changeValue()">
-                <input type="radio" onclick="getData('kvip')" name="waste" value="kvip">KVIP
-                <input type="radio" name="waste" value="bucket">Bucket Pan
-                <input type="radio" name="waste" value="public">Public Toilet
-                <input type="radio" name="waste" value="other">Other
-            </form>
-            <div id="container"></div>
+    
+
+                <div class="col-xs-6">
+                    <div id="container"></div>
+                </div>    
+                <div class="col-xs-6">
+                    <div id="container_two"></div>
+                </div>
+
+                <p class="copyright text-muted small">2010 Population Census</p>
+                <p class="copyright text-muted small">2006 MICS Report</p>
+
+
+
               <!--   <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
@@ -142,7 +152,7 @@
 
     <div class="content-section-b">
 
-        <div class="container">
+<!--         <div class="container">
 
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
@@ -156,7 +166,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- /.container -->
 
     </div>
@@ -170,12 +180,14 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <!-- <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2> -->
+                    <!-- <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p> -->
+                    
+
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <!-- <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -184,10 +196,10 @@
     </div>
     <!-- /.content-section-a -->
 
-	<a  name="contact"></a>
-    <div class="banner">
+	<!-- <a  name="contact"></a> -->
+    <!-- <div class="banner"> -->
 
-        <div class="container">
+      <!--   <div class="container">
 
             <div class="row">
                 <div class="col-lg-6">
@@ -208,10 +220,10 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- /.container -->
 
-    </div>
+    <!-- </div> -->
     <!-- /.banner -->
 
     <!-- Footer -->
@@ -236,7 +248,7 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; D.A.B. LAB. All Rights Reserved 2015</p>
                 </div>
             </div>
         </div>
@@ -253,6 +265,7 @@
     <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="{{ url_for('static',filename='js/gh-all.js')}}"></script>
     <script src="{{ url_for('static',filename='js/sanitation.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/sanitation_two.js')}}"></script> 
     <script src="{{ url_for('static',filename='js/housingFacilities.json')}}"></script>
     <script src="{{ url_for('static',filename='js/openDefecation.js')}}"></script>
 

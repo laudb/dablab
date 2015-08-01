@@ -6,43 +6,43 @@ $(function () {
     var data = [
         {
             "hc-key": "gh-ah",
-            "value": 98434
+            "value": 207221
         },
         {
             "hc-key": "gh-ep",
-            "value": 100193
+            "value": 208323
         },
         {
             "hc-key": "gh-wp",
-            "value": 34822
+            "value": 349860
         },
         {
             "hc-key": "gh-cp",
-            "value": 62088
+            "value": 148740
         },
         {
             "hc-key": "gh-aa",
-            "value": 148794
+            "value": 195950
         },
         {
             "hc-key": "gh-tv",
-            "value": 63237
+            "value": 487596
         },
         {
             "hc-key": "gh-np",
-            "value": 14587
+            "value": 216053
         },
         {
             "hc-key": "gh-ue",
-            "value": 6196
+            "value": 52704
         },
         {
             "hc-key": "gh-uw",
-            "value": 4929
+            "value": 12828
         },
         {
             "hc-key": "gh-ba",
-            "value": 39544
+            "value": 14016
         }
     ];
 
@@ -56,10 +56,10 @@ $(function () {
 
 
     // Initiate the chart
-    $('#container').highcharts('Map', {
+    $('#container_two').highcharts('Map', {
 
-        title : {
-            text : 'Number of Households with KVIP '
+        title : {   
+            text : 'Number of Households with Public Toilets'
         },
 
         subtitle : {
@@ -81,10 +81,10 @@ $(function () {
             data : data,
             mapData: Highcharts.maps['countries/gh/gh-all'],
             joinBy: 'hc-key',
-            name: 'KVIP',
+            name: 'Public Toilets',
             states: {
                 hover: {
-                    color: '#BADA55'
+                    color:'#FF8000'
                 }
             },
             dataLabels: {
@@ -95,4 +95,3 @@ $(function () {
 
     });
 });
-
